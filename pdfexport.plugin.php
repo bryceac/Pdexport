@@ -23,13 +23,8 @@ class PDexport extends Plugin
 	
 	public function filter_post_content_out($content, $post)
 	{
-		$content = $content; // setup variable to set link location
+		$content = $content . $this->pdf_link(); // setup variable to set link location
 		return content;
-	}
-	
-	public function pdf_content($theme, $post)
-	{
-		return $this->create_pdf($post); // send post content to PDF
 	}
 	
 	public function create_pdf($post)
@@ -39,10 +34,20 @@ class PDexport extends Plugin
 		$this->stream($post->title . '.pdf'); // set filename
 		
 	}
+
+        public function pdf_script($theme, $post)
+        {
+               $pscript = '<script type="text/javascript">
+               function pdf() {
+                  $.get(' . $this->create_pdf($post) . ');
+                  return false;
+               }';
+               return pscript;
+        }
 	
 	public function pdf_link()
 	{
-		$link = '<a href="">Save as PDF</a>';
+		$link = '<div id="pdf"><a href="">Save as PDF</a></div>';
 		return link;
 	}
 	// the following sets default values upon activation
