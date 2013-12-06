@@ -63,7 +63,7 @@ class PDexport extends Plugin
 	{
 		$link = '<div id="pdf"><a href="#" rel="nofollow" onclick="pdf();">Save as PDF</a></div>';
                 Stack::add('template_footer_javascript', array($this->pdf_script($post), 'type="text/javascript"'), 'pdfcode', 'jquery');
-		return link;
+		return $link;
 	}
 	// the following sets default values upon activation
 	/* public function action_plugin_activation($file)
