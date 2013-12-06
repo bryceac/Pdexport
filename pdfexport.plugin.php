@@ -27,6 +27,16 @@ class PDexport extends Plugin
 		return content;
 	}
 	
+        // function to insert things in template header
+        /* public function theme_header()
+        {
+
+        } */
+
+        public function theme_footer()
+        {
+        }
+
 	public function create_pdf($post)
 	{
 		$this->dompdf->load_html($post->permalink); // load html contents
