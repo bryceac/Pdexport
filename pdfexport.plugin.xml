@@ -12,11 +12,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 -->
 <pluggable type="plugin">
-<name>Feed Titles</name>
+<name>PDF Export</name>
 <license url="http://opensource.org/licenses/MIT">MIT License</license>
 <author url="http://blog.brycecampbell.me">Bryce C.</author>
-<version><!-- version number --></version>
+<version>0.1</version>
     <description>This plugin allows users to export posts as PDFs.</description>
 <copyright>2013</copyright>
-<guid><!-- guid --></guid>
+<guid>0a5dd9ce-9fba-42b1-ac3f-b1afea34e4aa</guid>
 </pluggable>
