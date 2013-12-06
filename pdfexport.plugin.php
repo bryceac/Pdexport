@@ -23,7 +23,7 @@ class PDexport extends Plugin
 	
 	public function filter_post_content_out($content, $post)
 	{
-		$content = $content . $this->pdf_link(); // setup variable to set link location
+		$content = $content . $this->pdf_link($post); // setup variable to set link location
 		return content;
 	}
 	
