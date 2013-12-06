@@ -49,9 +49,9 @@ class PDexport extends Plugin
 		$this->stream($post->title . '.pdf'); // set filename
 	}
 
-        public function pdf_script($theme, $post)
+        public function pdf_script($post)
         {
-               $pscript = '<script type="text/javascript">
+               $pscript = '
                function pdf() {
                   $.get(' . $this->create_pdf($post) . ');
                   return false;
@@ -59,9 +59,10 @@ class PDexport extends Plugin
                return $pscript;
         }
 	
-	public function pdf_link()
+	public function pdf_link($post)
 	{
 		$link = '<div id="pdf"><a href="#" rel="nofollow" onclick="pdf();">Save as PDF</a></div>';
+                Stack::add('template_footer_javascript', array($this->pdf_script($post), 'type="text/javascript"'), 'pdfcode', 'jquery');
 		return link;
 	}
 	// the following sets default values upon activation
