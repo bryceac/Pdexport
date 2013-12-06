@@ -29,10 +29,9 @@ class PDexport extends Plugin
 	
 	public function create_pdf($post)
 	{
-		$this->dompdf->load_html($post->content_out); // load html contents
+		$this->dompdf->load_html($post->permalink); // load html contents
 		$this->dompdf->render(); // render content
 		$this->stream($post->title . '.pdf'); // set filename
-		
 	}
 
         public function pdf_script($theme, $post)
@@ -42,12 +41,12 @@ class PDexport extends Plugin
                   $.get(' . $this->create_pdf($post) . ');
                   return false;
                }';
-               return pscript;
+               return $pscript;
         }
 	
 	public function pdf_link()
 	{
-		$link = '<div id="pdf"><a href="">Save as PDF</a></div>';
+		$link = '<div id="pdf"><a href="#" rel="nofollow" onclick="pdf();">Save as PDF</a></div>';
 		return link;
 	}
 	// the following sets default values upon activation
