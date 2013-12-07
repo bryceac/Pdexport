@@ -24,7 +24,7 @@ class PDexport extends Plugin
 	public function filter_post_content_out($content, $post)
 	{
 		$content = $content . $this->pdf_link($post); // setup variable to set link location
-		return content;
+		return $content;
 	}
 	
         // function to insert things in template header
