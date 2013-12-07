@@ -7,6 +7,30 @@
 
 This Habari plugin is supposed to allow users to save posts as PDFs, so that they can print it through things like HP's ePrint.
 
+===Version History===
+
+<ul>
+<li>
+<dl>
+<dt style=font-weight:bold">0.1</dt><dd>Initial Release</dd>
+</dl>
+</li>
+</ul>
+
+===Support===
+
+If you are encountering issues, feel free to let me know at the address below.
+
+'''Email:''' habari@brycecampbell.me
+
+===License===
+
+This plugin is lenses under the MIT license. See LICENSE for details.
+
 ===Misc.===
 
 This plugin has been tested with Habari 0.9. It is not known if it works in earlier versions.
+
+====DomPDF====
+
+This plugin uses [https://github.com/dompdf/dompdf DomPDF], which is licensed under the LGPL, to create PDFs.
