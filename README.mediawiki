@@ -38,7 +38,7 @@ If you are encountering issues, feel free to let me know at the address below.
 </li>
 <li>
 <dl>
-<dt style="font-weight:bold">Why does PDF not look exactly like it does when printed?</dt><dd>There are many reasons this can be a result, some of which lies with DomPDF itself, but one issue could be due to print style rules, and this plugin contains only one to hide the PDF link from the printed page and the generated PDF.
+<dt style="font-weight:bold">Why does PDF not look exactly like it does when printed?</dt><dd>There are many reasons this can be a result, some of which lies with DomPDF itself, but one issue could be due to print style rules, and this plugin contains only one to hide the PDF link from the printed page and the generated PDF.</dd>
 </dl>
 </li>
 </ol>
