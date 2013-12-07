@@ -25,10 +25,10 @@ class PDexport extends Plugin
 		}
 	
         // function to insert things in template header
-        /* public function theme_header()
+        public function theme_header()
         {
-
-        } */
+			Stack::add('template_stylesheet', $this->get_url() . '/style.css');
+        }
 
         // function to insert things in template footer
         public function theme_footer()
