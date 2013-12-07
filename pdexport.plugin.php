@@ -36,7 +36,7 @@ class PDexport extends Plugin
         // function to insert things in template footer
         public function theme_footer()
         {
-           if (!Stack::has('template_header_javascript', 'jquery')
+           if (!Stack::has('template_header_javascript', 'jquery'))
            {
                Stack::add('template_footer_javascript', Stie::get_url('scripts') . '/jquery.js', 'jquery');
            } else;
