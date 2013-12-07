@@ -23,6 +23,16 @@ If you are encountering issues, feel free to let me know at the address below.
 
 '''Email:''' habari@brycecampbell.me
 
+===FAQ===
+
+<ol>
+<li>
+<dl>
+<dt style="font-weight:bold">Why do all PDFs have the same filename?</dt><dd>When I originally made the plugin, the PDFs were named after the post they came from, but due to difficulties, I had to use DOMPDF in a different way. Because of this, some things mentioned in usage guides did not work, because they were deprecated.</dd>
+</dl>
+<\li>
+</ol>
+
 ===License===
 
 This plugin is lenses under the MIT license. See LICENSE for details.
@@ -34,3 +44,7 @@ This plugin has been tested with Habari 0.9. It is not known if it works in earl
 ====DomPDF====
 
 This plugin uses [https://github.com/dompdf/dompdf DomPDF], which is licensed under the LGPL, to create PDFs.
+
+====Configuration====
+
+This plugin cannot be configured in the Habari admin, but if you know how to configure DomPDF, then that should be all that is needed.
