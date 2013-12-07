@@ -49,15 +49,15 @@ class PDexport extends Plugin
 		$this->dompdf->stream($post->title . '.pdf'); // set filename
 	}
 
-        public function pdf_script($post)
-        {
-               $pscript = '
-               function pdf() {
-                  $.get(' . $this->create_pdf($post) . ');
-                  return false;
-               }';
+    public function pdf_script($post)
+    {
+         $pscript = '
+         function pdf() {
+         	$.get(' . $this->create_pdf($post) . ');
+         	return false;
+         }';
                return $pscript;
-        }
+    }
 	
 	public function pdf_link($post)
 	{
