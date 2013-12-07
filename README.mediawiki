@@ -1,7 +1,7 @@
 ==PDF Export==
 
-<span style="font-weight:bold">Version:</span> N/A
-<span style="font-weight:bold">Copyright:</span> 2013 Bryce Campbell
+'''Version:''' 0.1
+'''Copyright:''' 2013 Bryce Campbell
 
 ===Description===
 
@@ -9,4 +9,4 @@ This Habari plugin is supposed to allow users to save posts as PDFs, so that the
 
 ===Misc.===
 
-This plugin is currently a work in progress, so there is no support at all.
+This plugin has been tested with Habari 0.9. It is not known if it works in earlier versions.
