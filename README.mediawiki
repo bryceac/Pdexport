@@ -31,6 +31,16 @@ If you are encountering issues, feel free to let me know at the address below.
 <dt style="font-weight:bold">Why do all PDFs have the same filename?</dt><dd>When I originally made the plugin, the PDFs were named after the post they came from, but due to difficulties, I had to use DOMPDF in a different way. Because of this, some things mentioned in usage guides did not work, because they were deprecated.</dd>
 </dl>
 <\li>
+<li>
+<dl>
+<dt style="font-weight:bold">Why does it take so long for PDF to be made?</dt><dd>In my testing, the time it takes to generate a PDF depends on the amount of (X)HTML sent to the DomPDF script. The best performance I have seen came from using a print stylesheet that has only the post's content, such as title, publication date, and actual content. DomPDF, as packaged in this plugin, should recognize print style rules by default, if theme has any.</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt style="font-weight:bold">Why does PDF not look exactly like it does when printed?</dt><dd>There are many reasons this can be a result, some of which lies with DomPDF itself, but one issue could be due to print style rules, and this plugin contains only one to hide the PDF link from the printed page and the generated PDF.
+</dl>
+</li>
 </ol>
 
 ===License===
