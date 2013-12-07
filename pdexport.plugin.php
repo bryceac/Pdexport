@@ -44,9 +44,9 @@ class PDexport extends Plugin
 
 	public function create_pdf($post)
 	{
-		$this->dompdf->load_html_file($post->permalink); // load html contents
+		$this->dompdf->load_html($post->permalink); // load html contents
 		$this->dompdf->render(); // render content
-		$this->stream($post->title . '.pdf'); // set filename
+		$this->dompdf->stream($post->title . '.pdf'); // set filename
 	}
 
         public function pdf_script($post)
