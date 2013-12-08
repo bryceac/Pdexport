@@ -227,7 +227,13 @@ switch ( $sapi ) {
     }
   }
   
-  $outfile = "dompdf_out.pdf"; # Don't allow them to set the output file
+  // reintroduce query variable for output
+  if ( isset($_GET["output_file"]))
+  {
+  	$outfile = rawurldecode($_GET["output_file"]);
+  } else {
+  	$outfile = "dompdf_out.pdf";
+  }
   $save_file = false; # Don't save the file
   
   break;

@@ -63,7 +63,7 @@ class PDexport extends Plugin
 	
 		public function pdf_link($post)
 		{
-			$link = '<div id="pdf"><a href="' . $this->get_url() . '/dompdf/dompdf.php?input_file=' . Controller::get_var('slug') . '&base_path=' . Site::get_url('habari') . '/" rel="nofollow">Save as PDF</a></div>';
+			$link = '<div id="pdf"><a href="' . $this->get_url() . '/dompdf/dompdf.php?input_file=' . Controller::get_var('slug') . '&base_path=' . Site::get_url('habari') . '/&output_file=' . Controller::get_var('slug') . '.pdf" rel="nofollow">Save as PDF</a></div>';
         	// Stack::add('template_footer_javascript', array($this->pdf_script($post), 'type="text/javascript"'), 'pdfcode', 'jquery');
 			return $link;
 		}
