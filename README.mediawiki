@@ -5,7 +5,7 @@
 
 ===Description===
 
-This Habari plugin is supposed to allow users to save posts as PDFs, so that they can print it through things like HP's ePrint.
+This [http://habariproject.org Habari] plugin is supposed to allow users to save posts as PDFs, so that they can print it through things like HP's ePrint.
 
 ===Version History===
 
