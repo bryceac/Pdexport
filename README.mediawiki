@@ -17,6 +17,16 @@ This Habari plugin is supposed to allow users to save posts as PDFs, so that the
 </li>
 </ul>
 
+===Installation===
+
+<dl>
+<dt style="font-weight:bold">blog root</dt><dd>path to folder where Habari is installed</dd>
+<dt style="font-weight:bold">user</dt><dd>Habari's user directory</dd>
+</dl>
+
+Clone this repo or extract the downloaded archive file to the following directory and activate in Habari admin.
+
+<pre>blog root/user/plugins/</pre>
 ===Support===
 
 If you are encountering issues, feel free to let me know at the address below.
